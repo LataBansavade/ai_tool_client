@@ -1,0 +1,123 @@
+.ImageReader{
+    width: 100vw;
+    height: 100vh;
+   
+
+    color: rgb(14, 14, 14);
+    /* overflow: hidden; */
+    background: linear-gradient(-45deg, #e7e5e5, #d6d1d3, #e6ebed, #ebf3f1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.heading{
+   margin-left: 25%;
+   align-items: center;
+   display: flex;
+}
+.imgInput{
+   width: 50%;
+   height: 20%;
+  font-size: 18px;
+  margin-left: 25%;
+}
+.promptIn{
+   width: 50%;
+   font-size: 16px;
+   outline: none;
+   border-radius: 5px;
+   background-color: transparent;
+}
+.btnSubmit{
+    padding: 0.5% 1.5%;
+    font-size: 18px;
+    background-color: black;
+    color: rgb(205, 202, 197);
+    border: none;
+    border-radius: 5px;
+    margin-left: 0.8%;
+}
+.btnSubmit:hover{
+    background-color: silver;
+    color: black;
+}
+.formDiv{
+    margin-top: 3%;
+}
+.img-Ans{
+    display: flex;
+    margin-inline: 6%;
+    width: 100%;
+    height: 50%;
+    border: 2px soild red;
+}
+
+.imgPreview{
+ height:100%;
+ margin-top: 50px;
+}
+.loader{
+   
+    margin-top: 5%;
+   margin-left: 40%;
+}
+.ansDiv{
+   width: 30%;
+   height: 50%;
+   margin-top: 10%;
+   margin-left: 8%;
+   font-size: 18px;
+   font-style: italic;
+   line-height: 35px;
+   /* overflow-y: scroll; */
+   box-shadow: inset ;
+   padding: 1% 1.5%;
+   border-radius: 5px;
+}
+.ansFromAi{
+   box-shadow: inset 0px 0px 5px 1px rgb(112, 112, 112);
+
+}
+
+@media only screen and (max-width: 890px){
+   .heading{
+    margin-left:10% ;
+   }
+   .imgInput{
+   font-size: 12px;
+   margin-left: 10%;
+ }
+ .formDiv{
+    display: flex;
+    height: 15%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    font-size: 12px;
+ }
+ .promptIn{
+    font-size: 14px;
+
+ }
+ .btnSubmit{
+    font-size: 14px;
+
+ }
+ .img-Ans{
+    display: flex;
+    flex-direction: column;
+ }
+}
